@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Troca de EPIs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Funcionários</h1>
+        <form id="registerForm">
+            <label for="name">Nome do Funcionário:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="id">Número de Identificação:</label>
+            <input type="text" id="id" name="id" required>
+            <label for="quantity">Quantidade de EPIs:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            <label for="changes">Número de Trocas de EPIs:</label>
+            <input type="number" id="changes" name="changes" required>
+            <label for="epiTypes">Tipos de EPIs (selecione múltiplos):</label>
+            <select id="epiTypes" name="epiTypes" multiple required>
+                <option value="calcas">Calças</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="oculos">Óculos</option>
+                <option value="botas">Botas</option>
+                <option value="luvas">Luvas</option>
+                <option value="capacete">Capacete</option>
+            </select>
+            <button type="submit">Registrar Funcionário</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Relatório de Troca de EPIs</h1>
+        <div id="report"></div>
+        <button id="calculateButton">Calcular Porcentagens</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
